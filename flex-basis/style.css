@@ -1,0 +1,231 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #243047;
+    background-color: #f3f6fb;
+}
+
+.page-header {
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    background-color: #243b64;
+}
+
+.page-header h1 {
+    margin: 0 0 8px;
+}
+
+.page-header p {
+    margin: 0;
+}
+
+.page-content {
+    width: min(100% - 32px, 1000px);
+    margin: 25px auto;
+}
+
+.example,
+.note {
+    margin-bottom: 24px;
+    padding: 22px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.example h2,
+.note h2 {
+    margin-top: 0;
+    color: #2456a6;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+    padding: 12px;
+    border: 2px dashed #9aabc4;
+    border-radius: 8px;
+    background-color: #f8faff;
+}
+
+.item {
+    padding: 18px 12px;
+    border-radius: 6px;
+    background-color: #b9e2fa;
+    color: #173654;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+/* 1. Flex-basis theo px */
+.px-container {
+    flex-wrap: wrap;
+}
+
+.px-item {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.item-200 {
+    flex-basis: 200px;
+}
+
+.item-100 {
+    flex-basis: 100px;
+    background-color: #c8f0d0;
+}
+
+.item-150 {
+    flex-basis: 150px;
+    background-color: #ffe1b8;
+}
+
+/* 2. Flex-basis: auto */
+.auto-container {
+    flex-wrap: wrap;
+}
+
+.auto-item {
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.auto-one {
+    width: 180px;
+}
+
+.auto-two {
+    width: 280px;
+    background-color: #f8d0df;
+}
+
+/* 3. Flex-basis theo trục dọc */
+.column-container {
+    flex-direction: column;
+    height: 430px;
+    align-items: stretch;
+}
+
+.column-item {
+    flex: 0 0 100px;
+    background-color: #c8f0d0;
+}
+
+/* 4. Flex-basis theo phần trăm */
+.percent-container {
+    flex-wrap: wrap;
+}
+
+.percent-item {
+    flex: 0 1 50%;
+    min-width: 0;
+    background-color: #ffd1d1;
+}
+
+/* 5. Flex-basis kết hợp flex-grow */
+.grow-container {
+    width: 100%;
+}
+
+.grow-item {
+    flex-basis: 100px;
+    flex-shrink: 1;
+    color: white;
+    background-color: #426fc2;
+}
+
+.grow-one,
+.grow-three {
+    flex-grow: 1;
+}
+
+.grow-two {
+    flex-grow: 2;
+    background-color: #754bc1;
+}
+
+/* 6. Flex-basis: initial */
+.initial-container {
+    flex-wrap: wrap;
+}
+
+.initial-item {
+    flex-basis: initial;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 180px;
+    background-color: #ffe1b8;
+}
+
+.initial-item + .initial-item {
+    width: 240px;
+}
+
+/* 7. Flex-basis: inherit */
+.inherit-container {
+    display: flex;
+    padding: 12px;
+    border: 2px dashed #9aabc4;
+    border-radius: 8px;
+    background-color: #f8faff;
+}
+
+.inherit-parent {
+    display: flex;
+    flex: 0 0 180px;
+    padding: 8px;
+    border: 2px solid #426fc2;
+    background-color: #e3ecff;
+}
+
+.inherit-item {
+    flex: 0 0 inherit;
+    background-color: #c8f0d0;
+}
+
+.note li {
+    margin-bottom: 6px;
+}
+
+.page-footer {
+    padding: 18px;
+    text-align: center;
+    color: white;
+    background-color: #243b64;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .page-content {
+        width: calc(100% - 20px);
+        margin: 12px auto;
+    }
+
+    .example,
+    .note {
+        padding: 15px;
+    }
+
+    .container {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .column-container {
+        height: 400px;
+    }
+
+    .grow-container {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,122 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Basis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>CSS Flex-basis Property</h1>
+        <p>Thực hành kích thước cơ sở của Flex Item</p>
+    </header>
+
+    <main class="page-content">
+        <!-- Ví dụ 1: flex-basis với px -->
+        <section class="example">
+            <h2>1. Flex-basis với đơn vị px</h2>
+            <p>Ba item có kích thước cơ sở lần lượt là 200px, 100px và 150px.</p>
+
+            <div class="container px-container">
+                <div class="item px-item item-200">Item 1<br>200px</div>
+                <div class="item px-item item-100">Item 2<br>100px</div>
+                <div class="item px-item item-150">Item 3<br>150px</div>
+            </div>
+        </section>
+
+        <!-- Ví dụ 2: flex-basis với auto -->
+        <section class="example">
+            <h2>2. Flex-basis: auto</h2>
+            <p>Item sử dụng kích thước width đã được khai báo.</p>
+
+            <div class="container auto-container">
+                <div class="item auto-item auto-one">Width: 180px</div>
+                <div class="item auto-item auto-two">Width: 280px</div>
+            </div>
+        </section>
+
+        <!-- Ví dụ 3: flex-direction column -->
+        <section class="example">
+            <h2>3. Flex-basis với flex-direction: column</h2>
+            <p>Trục chính là chiều dọc nên flex-basis đặt kích thước cơ sở theo chiều cao.</p>
+
+            <div class="container column-container">
+                <div class="item column-item">Item 1 — 100px</div>
+                <div class="item column-item">Item 2 — 100px</div>
+                <div class="item column-item">Item 3 — 100px</div>
+            </div>
+        </section>
+
+        <!-- Ví dụ 4: flex-basis với phần trăm -->
+        <section class="example">
+            <h2>4. Flex-basis với %</h2>
+            <p>Mỗi item có flex-basis: 50%. Do có thêm gap, hai item có thể vượt quá chiều rộng ban đầu của container.</p>
+
+            <div class="container percent-container">
+                <div class="item percent-item">Item 1 — 50%</div>
+                <div class="item percent-item">Item 2 — 50%</div>
+            </div>
+        </section>
+
+        <!-- Ví dụ 5: flex-grow -->
+        <section class="example">
+            <h2>5. Kết hợp flex-basis và flex-grow</h2>
+            <p>Cả ba item có cơ sở 100px; phần không gian còn lại được chia theo tỷ lệ grow 1 : 2 : 1.</p>
+
+            <div class="container grow-container">
+                <div class="item grow-item grow-one">
+                    Item 1<br>grow: 1
+                </div>
+                <div class="item grow-item grow-two">
+                    Item 2<br>grow: 2
+                </div>
+                <div class="item grow-item grow-three">
+                    Item 3<br>grow: 1
+                </div>
+            </div>
+        </section>
+
+        <!-- Ví dụ 6: initial -->
+        <section class="example">
+            <h2>6. Flex-basis: initial</h2>
+            <p>Giá trị initial đưa flex-basis về giá trị mặc định là auto.</p>
+
+            <div class="container initial-container">
+                <div class="item initial-item">Initial — width: 180px</div>
+                <div class="item initial-item">Initial — width: 240px</div>
+            </div>
+        </section>
+
+        <!-- Ví dụ 7: inherit -->
+        <section class="example">
+            <h2>7. Flex-basis: inherit</h2>
+            <p>Item con kế thừa giá trị flex-basis từ phần tử cha là 180px.</p>
+
+            <div class="inherit-container">
+                <div class="inherit-parent">
+                    <div class="item inherit-item">Kế thừa 180px</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="note">
+            <h2>Ghi nhớ</h2>
+            <ul>
+                <li><strong>row:</strong> flex-basis theo trục ngang.</li>
+                <li><strong>column:</strong> flex-basis theo trục dọc.</li>
+                <li><strong>auto:</strong> dựa vào kích thước chính đã khai báo hoặc nội dung.</li>
+                <li><strong>initial:</strong> đặt về auto.</li>
+                <li><strong>inherit:</strong> kế thừa giá trị từ phần tử cha.</li>
+                <li><strong>flex-grow:</strong> cho phép item nhận thêm không gian còn trống.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>Bài tập thực hành CSS Flexbox | Flex-basis</p>
+    </footer>
+</body>
+</html>
+```
