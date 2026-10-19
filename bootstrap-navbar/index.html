@@ -1,0 +1,159 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap Navbar</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS riêng -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                MyWebsite
+            </a>
+
+            <!-- Nút mở menu trên mobile -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Mở hoặc đóng menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu điều hướng -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Services
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#web-design">
+                                    Web Design
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#seo">
+                                    SEO
+                                </a>
+                            </li>
+
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                                <a class="dropdown-item" href="#consulting">
+                                    Consulting
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nội dung trang -->
+    <main>
+        <section class="hero text-center" id="home">
+            <div class="container">
+                <h1>Welcome to MyWebsite</h1>
+                <p class="lead">
+                    Khám phá cách xây dựng Navbar với Bootstrap 5.
+                </p>
+                <a href="#about" class="btn btn-primary btn-lg">
+                    Tìm hiểu thêm
+                </a>
+            </div>
+        </section>
+
+        <section class="container content-section" id="about">
+            <h2>About Us</h2>
+            <p>
+                Đây là website minh họa sử dụng Bootstrap Navbar.
+                Thanh điều hướng có menu chính và danh mục dropdown,
+                đồng thời tự động thích ứng với màn hình nhỏ.
+            </p>
+        </section>
+
+        <section class="container content-section" id="web-design">
+            <h2>Web Design</h2>
+            <p>Dịch vụ thiết kế giao diện website hiện đại.</p>
+        </section>
+
+        <section class="container content-section" id="seo">
+            <h2>SEO</h2>
+            <p>Tối ưu hóa website cho công cụ tìm kiếm.</p>
+        </section>
+
+        <section class="container content-section" id="consulting">
+            <h2>Consulting</h2>
+            <p>Tư vấn giải pháp phát triển website.</p>
+        </section>
+
+        <section class="container content-section" id="contact">
+            <h2>Contact</h2>
+            <p>Email: contact@example.com</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">
+            &copy; 2026 MyWebsite. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+```
