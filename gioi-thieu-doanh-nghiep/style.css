@@ -1,0 +1,187 @@
+
+/* Thiết lập chung */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #212529;
+    line-height: 1.7;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 26px;
+}
+
+.brand-dot {
+    color: #f59e0b;
+}
+
+.navbar .nav-link {
+    margin-left: 12px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #2563eb;
+}
+
+/* Hero Section */
+.hero {
+    padding: 110px 20px;
+    background: linear-gradient(135deg, #2563eb, #4338ca);
+}
+
+.hero-label {
+    color: #dbeafe;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero p {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tiêu đề các section */
+.section-label {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* About Section */
+.about-card {
+    padding: 35px;
+    border-radius: 14px;
+    background-color: #eff6ff;
+    border: 1px solid #dbeafe;
+}
+
+.about-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    color: white;
+    background-color: #2563eb;
+    font-weight: bold;
+}
+
+.about-card h3 {
+    font-size: 22px;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #f8fafc;
+}
+
+.service-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px #00000012;
+}
+
+.service-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    color: white;
+    background-color: #2563eb;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.service-card .card-text {
+    min-height: 110px;
+}
+
+.service-card .btn {
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #ffffff;
+}
+
+.contact-info a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    margin-top: 0;
+}
+
+/* Responsive: tablet và điện thoại */
+@media (max-width: 767.98px) {
+    .hero {
+        padding: 75px 18px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .about-card {
+        padding: 25px;
+    }
+
+    .service-card .card-text {
+        min-height: auto;
+    }
+}
+
+/* Điện thoại màn hình nhỏ */
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero .btn {
+        width: 100%;
+    }
+}
