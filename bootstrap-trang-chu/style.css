@@ -1,0 +1,208 @@
+
+/* Thiết lập chung */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212529;
+    line-height: 1.7;
+}
+
+section {
+    scroll-margin-top: 65px;
+}
+
+/* Carousel */
+.hero-image {
+    height: 560px;
+    object-fit: cover;
+    filter: brightness(55%);
+}
+
+.carousel-caption {
+    top: 50%;
+    bottom: auto;
+    left: 10%;
+    right: 10%;
+    transform: translateY(-50%);
+    padding-bottom: 0;
+}
+
+.carousel-caption h1,
+.carousel-caption h2 {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Phần giới thiệu */
+.welcome-section {
+    min-height: 300px;
+}
+
+.section-label {
+    color: #0d6efd;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-description {
+    max-width: 700px;
+}
+
+/* Dịch vụ */
+.service-card {
+    border: 1px solid #e9ecef;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #e7f1ff;
+    color: #0d6efd;
+    font-size: 28px;
+}
+
+/* Kêu gọi hành động */
+.cta-section {
+    background: linear-gradient(135deg, #0d6efd, #084298);
+}
+
+.cta-section .btn {
+    border-radius: 30px;
+    padding: 12px 28px;
+    font-weight: 600;
+}
+
+/* Form liên hệ */
+.contact-form {
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    min-height: 45px;
+    border-radius: 8px;
+}
+
+textarea.form-control {
+    min-height: 120px;
+}
+
+.contact-form .btn {
+    min-height: 46px;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer-brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #6c757d;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.social-links a:hover {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+    .hero-image {
+        height: 450px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+
+    .carousel-caption h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Điện thoại */
+@media (max-width: 575.98px) {
+    .hero-image {
+        height: 380px;
+    }
+
+    .carousel-caption {
+        left: 12%;
+        right: 12%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.6rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.95rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+
+    .welcome-section {
+        min-height: auto;
+    }
+
+    .welcome-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-section h2 {
+        font-size: 1.6rem;
+    }
+}
