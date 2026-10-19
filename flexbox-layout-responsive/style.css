@@ -1,0 +1,202 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+    background-color: #f1f5f9;
+}
+
+/* Bố cục toàn trang */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Header */
+.header {
+    padding: 28px 20px;
+    text-align: center;
+    color: white;
+    background-color: #1d4ed8;
+}
+
+.header h1 {
+    margin-bottom: 6px;
+    font-size: 32px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background-color: #1e293b;
+}
+
+.nav a {
+    padding: 10px 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.nav a:hover {
+    background-color: #3b82f6;
+}
+
+/* Khu vực Main Content và Sidebar */
+.main-container {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    gap: 20px;
+    padding: 24px;
+}
+
+/* Nội dung chính chiếm 3 phần */
+.content {
+    flex: 3 1 0;
+    min-width: 0;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.content h2 {
+    margin-bottom: 12px;
+    color: #1d4ed8;
+}
+
+.content p {
+    margin-bottom: 12px;
+}
+
+.content ul {
+    padding-left: 24px;
+}
+
+.welcome {
+    margin-bottom: 24px;
+    padding: 22px;
+    background-color: #dbeafe;
+    border-radius: 8px;
+}
+
+.welcome h2 {
+    color: #1e40af;
+}
+
+/* Sidebar chiếm 1 phần */
+.sidebar {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 22px;
+    background-color: #f1f5f9;
+    border-radius: 10px;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.side-card {
+    margin-top: 16px;
+    padding: 16px;
+    background-color: white;
+    border-left: 4px solid #3b82f6;
+    border-radius: 6px;
+}
+
+.side-card h3 {
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    padding: 22px 16px;
+    text-align: center;
+    color: white;
+    background-color: #1e293b;
+}
+
+/* Responsive cho tablet và điện thoại */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 26px;
+    }
+
+    .nav {
+        gap: 4px;
+    }
+
+    .nav a {
+        padding: 9px 12px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .content,
+    .sidebar {
+        flex: 1 1 auto;
+        width: 100%;
+        padding: 18px;
+    }
+}
+
+/* Tối ưu điện thoại nhỏ */
+@media (max-width: 480px) {
+    .header {
+        padding: 22px 12px;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav a {
+        text-align: center;
+    }
+
+    .main-container {
+        padding: 12px;
+    }
+
+    .content,
+    .sidebar {
+        padding: 15px;
+    }
+
+    .welcome {
+        padding: 16px;
+    }
+}
