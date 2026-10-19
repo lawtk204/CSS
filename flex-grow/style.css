@@ -1,0 +1,133 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #1d4ed8;
+    color: white;
+    text-align: center;
+    padding: 28px 16px;
+}
+
+.header h1 {
+    margin-bottom: 8px;
+}
+
+.content {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.content h2 {
+    margin-bottom: 12px;
+}
+
+.description {
+    margin-bottom: 20px;
+    color: #475569;
+}
+
+/* Flex Container */
+.container {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+}
+
+/* Các Flex Item */
+.item {
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 0;
+    min-height: 150px;
+    padding: 18px 8px;
+    border-radius: 8px;
+    background-color: #60a5fa;
+    color: #102a43;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.item span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item small {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+/* Item 2 phát triển gấp đôi */
+.item2 {
+    flex-grow: 2;
+    background-color: #f59e0b;
+}
+
+.explanation {
+    margin-top: 30px;
+    padding: 22px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.explanation h2 {
+    color: #1d4ed8;
+}
+
+.explanation ul {
+    padding-left: 22px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #1e293b;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        gap: 6px;
+        padding: 8px;
+    }
+
+    .item {
+        padding: 12px 3px;
+        min-height: 120px;
+    }
+
+    .item span {
+        font-size: 14px;
+    }
+
+    .item small {
+        font-size: 10px;
+    }
+
+    .content {
+        padding: 0 12px;
+    }
+}
