@@ -1,0 +1,171 @@
+
+/* Thiết lập chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f2f4f7;
+}
+
+/* Header */
+.header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+}
+
+.header p {
+    margin: 0;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: #1e293b;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 22px;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #475569;
+}
+
+/* Khu vực nội dung chính và sidebar */
+.container {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 3;
+    min-width: 0;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0000000d;
+}
+
+.main-content h2 {
+    margin-top: 0;
+    color: #2563eb;
+}
+
+.article {
+    margin-top: 20px;
+    padding: 15px;
+    border-left: 4px solid #2563eb;
+    background-color: #f8fafc;
+}
+
+.article h3 {
+    margin-top: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    min-width: 0;
+    padding: 25px;
+    background-color: #e2e8f0;
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar-item {
+    margin: 12px 0;
+    padding: 12px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.sidebar-item a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.sidebar-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #1e293b;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive: máy tính bảng và điện thoại */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .main-content,
+    .sidebar {
+        width: 100%;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .navigation a {
+        text-align: center;
+        border-bottom: 1px solid #334155;
+    }
+}
+
+/* Điện thoại màn hình nhỏ */
+@media (max-width: 480px) {
+    .header {
+        padding: 20px 12px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .main-content,
+    .sidebar {
+        padding: 18px;
+    }
+
+    .container {
+        gap: 15px;
+        margin: 15px auto;
+    }
+}
