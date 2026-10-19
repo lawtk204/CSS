@@ -1,0 +1,288 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova One - Điện thoại thế hệ mới</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS riêng -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Thanh điều hướng -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">NOVA</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false"
+                    aria-label="Mở menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#overview">Tổng quan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Tính năng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#specifications">Thông số</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Hình ảnh</a>
+                    </li>
+                </ul>
+
+                <a href="#buy" class="btn btn-primary rounded-pill px-4">
+                    Mua ngay
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Tổng quan sản phẩm -->
+    <header id="overview" class="hero-section text-center">
+        <div class="container py-5">
+            <p class="text-primary fw-semibold mb-2">GIỚI THIỆU SẢN PHẨM MỚI</p>
+
+            <h1 class="display-2 fw-bold mb-3">Nova One</h1>
+
+            <h2 class="h3 fw-normal text-secondary mb-4">
+                Công nghệ đỉnh cao. Trải nghiệm khác biệt.
+            </h2>
+
+            <p class="lead text-secondary mx-auto hero-description mb-4">
+                Một chiếc điện thoại được thiết kế để đồng hành cùng bạn
+                trong công việc, sáng tạo và mọi khoảnh khắc cuộc sống.
+            </p>
+
+            <div class="d-flex justify-content-center align-items-center flex-wrap gap-3 mb-5">
+                <a href="#features" class="btn btn-primary btn-lg rounded-pill px-4">
+                    Khám phá sản phẩm
+                </a>
+                <a href="#specifications" class="btn btn-outline-dark btn-lg rounded-pill px-4">
+                    Xem thông số <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+
+            <div class="product-hero-image mx-auto">
+                <img
+                    src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=1400&q=85"
+                    alt="Điện thoại thông minh Nova One"
+                    class="img-fluid">
+            </div>
+
+            <p class="text-secondary small mt-3">
+                Hình ảnh minh họa cho thiết kế sản phẩm.
+            </p>
+        </div>
+    </header>
+
+    <!-- Điểm nổi bật -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container py-lg-4">
+            <div class="text-center mb-5">
+                <p class="text-primary fw-semibold">ĐIỂM NỔI BẬT</p>
+                <h2 class="display-5 fw-bold">Mạnh mẽ trong từng chi tiết.</h2>
+                <p class="text-secondary">
+                    Những tính năng giúp trải nghiệm mỗi ngày trở nên tuyệt vời hơn.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-card bg-white p-4 p-lg-5 h-100 rounded-4">
+                        <div class="feature-icon mb-4">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <h3 class="h4 fw-bold">Camera sắc nét</h3>
+                        <p class="text-secondary mb-0">
+                            Ghi lại những khoảnh khắc đáng nhớ với hình ảnh rõ nét
+                            và màu sắc sống động.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-card bg-white p-4 p-lg-5 h-100 rounded-4">
+                        <div class="feature-icon mb-4">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="h4 fw-bold">Hiệu năng mạnh mẽ</h3>
+                        <p class="text-secondary mb-0">
+                            Chuyển đổi ứng dụng mượt mà, hỗ trợ học tập, làm việc
+                            và giải trí hằng ngày.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-card bg-white p-4 p-lg-5 h-100 rounded-4">
+                        <div class="feature-icon mb-4">
+                            <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                        <h3 class="h4 fw-bold">Pin bền bỉ</h3>
+                        <p class="text-secondary mb-0">
+                            Thiết kế hướng đến thời lượng sử dụng dài để bạn
+                            luôn sẵn sàng cho ngày mới.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thiết kế sản phẩm -->
+    <section id="gallery" class="py-5">
+        <div class="container py-lg-5">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-6">
+                    <img
+                        src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=85"
+                        alt="Thiết kế điện thoại thông minh"
+                        class="img-fluid rounded-4 shadow-sm">
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <p class="text-primary fw-semibold">THIẾT KẾ TINH TẾ</p>
+                    <h2 class="display-5 fw-bold mb-4">
+                        Đẹp từ mọi góc nhìn.
+                    </h2>
+                    <p class="text-secondary">
+                        Nova One hướng đến sự cân bằng giữa vẻ ngoài hiện đại,
+                        cảm giác cầm nắm thoải mái và tính tiện dụng.
+                    </p>
+
+                    <div class="d-flex align-items-start gap-3 mt-4">
+                        <i class="fa-solid fa-check-circle text-primary fs-4 mt-1"></i>
+                        <div>
+                            <h3 class="h6 fw-bold">Phong cách tối giản</h3>
+                            <p class="text-secondary mb-0">
+                                Đường nét gọn gàng, phù hợp với nhiều phong cách.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3 mt-4">
+                        <i class="fa-solid fa-check-circle text-primary fs-4 mt-1"></i>
+                        <div>
+                            <h3 class="h6 fw-bold">Trải nghiệm trực quan</h3>
+                            <p class="text-secondary mb-0">
+                                Bố cục dễ sử dụng và thao tác thuận tiện.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thông số -->
+    <section id="specifications" class="py-5 specs-section">
+        <div class="container py-lg-4">
+            <div class="text-center mb-5">
+                <p class="text-primary fw-semibold">THÔNG TIN SẢN PHẨM</p>
+                <h2 class="display-5 fw-bold">Sẵn sàng cho mọi trải nghiệm.</h2>
+            </div>
+
+            <div class="row g-3 justify-content-center">
+                <div class="col-6 col-lg-3">
+                    <div class="spec-card text-center p-4 rounded-4 h-100">
+                        <i class="fa-solid fa-mobile-screen-button fs-2 text-primary mb-3"></i>
+                        <h3 class="h6 text-secondary">Màn hình</h3>
+                        <p class="h5 fw-bold mb-0">Sống động</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="spec-card text-center p-4 rounded-4 h-100">
+                        <i class="fa-solid fa-camera fs-2 text-primary mb-3"></i>
+                        <h3 class="h6 text-secondary">Camera</h3>
+                        <p class="h5 fw-bold mb-0">Độ nét cao</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="spec-card text-center p-4 rounded-4 h-100">
+                        <i class="fa-solid fa-microchip fs-2 text-primary mb-3"></i>
+                        <h3 class="h6 text-secondary">Bộ xử lý</h3>
+                        <p class="h5 fw-bold mb-0">Hiệu năng cao</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="spec-card text-center p-4 rounded-4 h-100">
+                        <i class="fa-solid fa-shield-halved fs-2 text-primary mb-3"></i>
+                        <h3 class="h6 text-secondary">Bảo mật</h3>
+                        <p class="h5 fw-bold mb-0">Ưu tiên an toàn</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-secondary small text-center mt-4 mb-0">
+                Các mô tả trên phục vụ bài tập thiết kế giao diện, không phải thông số kỹ thuật đã xác nhận.
+            </p>
+        </div>
+    </section>
+
+    <!-- Khu vực mua hàng -->
+    <section id="buy" class="py-5">
+        <div class="container">
+            <div class="purchase-box text-center text-white p-4 p-md-5 rounded-4">
+                <p class="fw-semibold mb-2">NOVA ONE</p>
+                <h2 class="display-5 fw-bold mb-3">
+                    Sẵn sàng nâng cấp trải nghiệm?
+                </h2>
+                <p class="mb-4">
+                    Khám phá thiết kế hiện đại và những tiện ích dành cho bạn.
+                </p>
+                <a href="#overview" class="btn btn-light btn-lg rounded-pill px-5">
+                    Tìm hiểu thêm
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-top py-4 bg-white">
+        <div class="container d-flex flex-column flex-md-row
+                    justify-content-between align-items-center gap-3">
+            <a href="#" class="text-dark text-decoration-none fw-bold fs-5">NOVA</a>
+
+            <p class="text-secondary small mb-0 text-center">
+                &copy; 2026 Nova One. Trang web minh họa phục vụ học tập.
+            </p>
+
+            <div class="d-flex gap-3">
+                <a href="#overview" class="text-secondary" aria-label="Trang chủ">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+                <a href="#features" class="text-secondary" aria-label="Tính năng">
+                    <i class="fa-solid fa-star"></i>
+                </a>
+                <a href="#buy" class="text-secondary" aria-label="Mua sản phẩm">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+```
