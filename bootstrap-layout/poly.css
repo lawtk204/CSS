@@ -1,0 +1,196 @@
+
+/* Phần đầu trang */
+header {
+    position: relative;
+    min-height: 180px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #337ab7, #173b62);
+    border-radius: 4px;
+}
+
+.shopping-mall {
+    position: absolute;
+    left: 25px;
+    bottom: 20px;
+    z-index: 1;
+    color: white;
+    font-variant: small-caps;
+}
+
+.shopping-mall h1 {
+    font-family: Impact, "Arial Narrow", sans-serif;
+    font-size: 42px;
+    color: white;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 3px black;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #ddd;
+    margin: 0;
+}
+
+.shopping-mall h5 {
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+}
+
+.header-object {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    width: 160px;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+/* Thanh điều hướng */
+.navbar {
+    border-radius: 4px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    transition: background-color 0.2s ease;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #444;
+}
+
+/* Giỏ hàng */
+.poly-cart {
+    margin-top: 5px;
+}
+
+.poly-cart ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-variant: small-caps;
+}
+
+.poly-cart .panel-heading strong {
+    font-variant: small-caps;
+    font-size: 16px;
+    text-shadow: 0 0 2px darkgray;
+}
+
+.poly-cart .panel-body {
+    padding: 10px;
+}
+
+/* Sản phẩm */
+.poly-prod {
+    text-align: center;
+    padding: 5px;
+}
+
+.poly-prod .panel {
+    height: 245px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.poly-prod .panel:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.poly-prod .panel-heading {
+    min-height: 40px;
+}
+
+.poly-prod .panel-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.poly-prod .panel-body {
+    height: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.poly-prod .panel-body img {
+    width: 100%;
+    max-width: 100%;
+    height: 130px;
+    object-fit: contain;
+}
+
+.poly-prod .panel-footer {
+    color: #c9302c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Chân trang */
+footer {
+    margin-top: 20px;
+}
+
+footer .panel-heading {
+    padding: 18px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .shopping-mall {
+        left: 15px;
+        right: 10px;
+        bottom: 15px;
+    }
+
+    .shopping-mall h1 {
+        font-size: 28px;
+    }
+
+    .shopping-mall h5 {
+        font-size: 11px;
+    }
+
+    .header-object {
+        right: 10px;
+        top: 10px;
+        bottom: auto;
+        width: 75px;
+        max-height: 70px;
+        opacity: 0.85;
+    }
+
+    .poly-prod .panel {
+        height: 230px;
+    }
+
+    .poly-prod .panel-body {
+        height: 140px;
+    }
+
+    .poly-prod .panel-body img {
+        height: 110px;
+    }
+
+    aside {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .shopping-mall h1 {
+        font-size: 23px;
+    }
+
+    .shopping-mall h5 {
+        max-width: 220px;
+        line-height: 1.4;
+    }
+
+    .poly-prod .panel-title {
+        font-size: 13px;
+    }
+
+    .poly-prod .panel-footer {
+        font-size: 14px;
+    }
+}
