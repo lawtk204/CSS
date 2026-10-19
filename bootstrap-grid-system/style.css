@@ -1,0 +1,147 @@
+
+/* Thiết lập chung */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f3f6fa;
+    line-height: 1.7;
+}
+
+/* Header */
+.site-header {
+    background: linear-gradient(135deg, #2563eb, #4338ca);
+}
+
+.site-header h1 {
+    margin-bottom: 8px;
+}
+
+/* Navbar */
+.navbar {
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    font-size: 23px;
+}
+
+.navbar .nav-link {
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #93c5fd;
+}
+
+/* Main Content */
+.content-box,
+.sidebar-box {
+    height: 100%;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #0000000a;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    color: #2563eb;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Bài viết */
+.article-card {
+    margin-top: 22px;
+    padding: 20px;
+    background-color: #f8fafc;
+    border-left: 4px solid #2563eb;
+    border-radius: 5px;
+}
+
+.article-card h3 {
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.article-card p {
+    margin-bottom: 0;
+}
+
+code {
+    color: #be185d;
+}
+
+/* Sidebar */
+.sidebar-box {
+    background-color: #eaf1ff;
+}
+
+.sidebar-item {
+    margin-top: 12px;
+    padding: 12px 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    transition: transform 0.2s;
+}
+
+.sidebar-item:hover {
+    transform: translateX(4px);
+}
+
+.sidebar-item a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.sidebar-item a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-note {
+    padding: 15px;
+    background-color: #dbeafe;
+    border-radius: 6px;
+}
+
+/* Footer */
+.site-footer {
+    margin-top: 35px;
+    background-color: #1e293b;
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+    .content-box,
+    .sidebar-box {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 23px;
+    }
+
+    .article-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header h1 {
+        font-size: 27px;
+    }
+
+    .site-header p {
+        font-size: 14px;
+    }
+
+    .content-box,
+    .sidebar-box {
+        padding: 16px;
+    }
+}
