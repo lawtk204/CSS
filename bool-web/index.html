@@ -1,0 +1,393 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookSpace - Giới thiệu sách</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#home">
+                    <i class="bi bi-book-half"></i> BookSpace
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainMenu"
+                    aria-controls="mainMenu"
+                    aria-expanded="false"
+                    aria-label="Mở menu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#overview">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#author">Tác giả</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Đặc điểm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#prices">Giá sách</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Đánh giá</a>
+                        </li>
+                    </ul>
+
+                    <a class="btn btn-primary ms-lg-3 mt-2 mt-lg-0" href="#download">
+                        Nhận sách
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Book Overview -->
+    <main>
+        <section class="hero section-padding" id="home">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="eyebrow">MỘT CUỐN SÁCH TRUYỀN CẢM HỨNG</span>
+
+                        <h1 class="hero-title">
+                            Khám phá bản thân,
+                            <span>mở lối tương lai</span>
+                        </h1>
+
+                        <p class="hero-text">
+                            Một hành trình khám phá tri thức, phát triển tư duy
+                            và tìm kiếm cảm hứng để mỗi ngày trở nên ý nghĩa hơn.
+                        </p>
+
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#prices" class="btn btn-primary btn-lg">
+                                Khám phá sách
+                            </a>
+                            <a href="#overview" class="btn btn-outline-primary btn-lg">
+                                Tìm hiểu thêm
+                            </a>
+                        </div>
+
+                        <div class="book-stats">
+                            <div>
+                                <strong>200+</strong>
+                                <span>Trang sách</span>
+                            </div>
+                            <div>
+                                <strong>12</strong>
+                                <span>Chương sách</span>
+                            </div>
+                            <div>
+                                <strong>4.9/5</strong>
+                                <span>Điểm minh họa</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="book-visual">
+                            <div class="book-cover">
+                                <div class="cover-top">HÀNH TRÌNH TRI THỨC</div>
+                                <div class="cover-decoration">
+                                    <i class="bi bi-sun"></i>
+                                </div>
+                                <h2>KHÁM PHÁ<br>BẢN THÂN</h2>
+                                <p>Thay đổi tư duy · Kiến tạo tương lai</p>
+                                <div class="cover-author">BOOKSPACE EDITION</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book Overview details -->
+        <section class="section-padding" id="overview">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <span class="eyebrow">BOOK OVERVIEW</span>
+                    <h2>Một cuốn sách, nhiều ý tưởng mới</h2>
+                    <p>
+                        Nội dung được trình bày gần gũi, giúp bạn dễ dàng
+                        áp dụng kiến thức vào cuộc sống hằng ngày.
+                    </p>
+                </div>
+
+                <div class="row g-4 mt-3">
+                    <div class="col-md-4">
+                        <div class="info-card">
+                            <i class="bi bi-lightbulb"></i>
+                            <h3>Mở rộng tư duy</h3>
+                            <p>Khám phá những góc nhìn mới và rèn luyện khả năng suy nghĩ độc lập.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="info-card">
+                            <i class="bi bi-signpost-split"></i>
+                            <h3>Định hướng bản thân</h3>
+                            <p>Xác định mục tiêu, xây dựng thói quen và chủ động phát triển bản thân.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="info-card">
+                            <i class="bi bi-journal-check"></i>
+                            <h3>Ứng dụng thực tế</h3>
+                            <p>Các gợi ý đơn giản giúp biến ý tưởng thành hành động mỗi ngày.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Author -->
+        <section class="author-section section-padding" id="author">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5">
+                        <div class="author-art">
+                            <i class="bi bi-person-circle"></i>
+                            <span>AUTHOR PROFILE</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <span class="eyebrow">ABOUT THE AUTHOR</span>
+                        <h2 class="section-title">Đôi lời về tác giả</h2>
+
+                        <p>
+                            Tác giả của cuốn sách là người yêu thích việc học hỏi,
+                            khám phá những ý tưởng mới và chia sẻ kinh nghiệm
+                            phát triển bản thân.
+                        </p>
+
+                        <p>
+                            Qua từng chương sách, độc giả được khuyến khích đặt câu hỏi,
+                            nhìn nhận vấn đề đa chiều và xây dựng con đường phát triển
+                            phù hợp với chính mình.
+                        </p>
+
+                        <a href="#download" class="text-link">
+                            Khám phá cuốn sách <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                        <p class="small text-secondary mt-3">
+                            * Thông tin tác giả trên trang này là nội dung minh họa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="section-padding" id="features">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <span class="eyebrow">BOOK FEATURES</span>
+                    <h2>Điều gì làm nên sự khác biệt?</h2>
+                    <p>Thiết kế nội dung hướng đến trải nghiệm đọc dễ hiểu và hữu ích.</p>
+                </div>
+
+                <div class="row g-4 mt-3">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature-card">
+                            <i class="bi bi-book"></i>
+                            <h3>Nội dung dễ hiểu</h3>
+                            <p>Cách trình bày rõ ràng, phù hợp để đọc mỗi ngày.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature-card">
+                            <i class="bi bi-clock"></i>
+                            <h3>Tiết kiệm thời gian</h3>
+                            <p>Các chương được chia thành những chủ đề cụ thể.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature-card">
+                            <i class="bi bi-phone"></i>
+                            <h3>Đọc linh hoạt</h3>
+                            <p>Phù hợp với trải nghiệm đọc trên nhiều thiết bị.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature-card">
+                            <i class="bi bi-heart"></i>
+                            <h3>Truyền cảm hứng</h3>
+                            <p>Khuyến khích bạn duy trì tinh thần học hỏi lâu dài.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prices -->
+        <section class="price-section section-padding" id="prices">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <span class="eyebrow">PRICING</span>
+                    <h2>Chọn phiên bản phù hợp</h2>
+                    <p>Giá dưới đây là giá minh họa cho bài tập giao diện.</p>
+                </div>
+
+                <div class="row justify-content-center g-4 mt-3">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="price-card">
+                            <h3>E-book</h3>
+                            <p class="price">49.000đ</p>
+                            <p>Phiên bản sách điện tử</p>
+                            <ul>
+                                <li><i class="bi bi-check-circle"></i> Đọc trên thiết bị cá nhân</li>
+                                <li><i class="bi bi-check-circle"></i> Nội dung đầy đủ</li>
+                                <li><i class="bi bi-check-circle"></i> Bố cục dễ đọc</li>
+                            </ul>
+                            <a href="#download" class="btn btn-outline-primary w-100">
+                                Tìm hiểu thêm
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="price-card featured-price">
+                            <span class="popular-label">GỢI Ý</span>
+                            <h3>Sách in</h3>
+                            <p class="price">129.000đ</p>
+                            <p>Phiên bản sách giấy</p>
+                            <ul>
+                                <li><i class="bi bi-check-circle"></i> Trải nghiệm đọc truyền thống</li>
+                                <li><i class="bi bi-check-circle"></i> Bìa sách thiết kế riêng</li>
+                                <li><i class="bi bi-check-circle"></i> Phù hợp làm quà tặng</li>
+                            </ul>
+                            <a href="#download" class="btn btn-primary w-100">
+                                Tìm hiểu thêm
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download -->
+        <section class="download-section section-padding" id="download">
+            <div class="container">
+                <div class="download-box text-center">
+                    <i class="bi bi-book-half download-icon"></i>
+                    <h2>Sẵn sàng cho hành trình đọc mới?</h2>
+                    <p>
+                        Chọn phiên bản sách phù hợp và bắt đầu khám phá những ý tưởng mới.
+                    </p>
+                    <a href="#prices" class="btn btn-light btn-lg">
+                        Xem các phiên bản
+                    </a>
+                    <p class="small mt-3 mb-0">
+                        Đây là nút minh họa giao diện, chưa kết nối chức năng mua hoặc tải sách.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reader's Say -->
+        <section class="section-padding" id="reviews">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <span class="eyebrow">READER'S SAY</span>
+                    <h2>Cảm nhận từ độc giả</h2>
+                    <p>Các nhận xét dưới đây được tạo để minh họa thiết kế.</p>
+                </div>
+
+                <div class="row g-4 mt-3">
+                    <div class="col-md-4">
+                        <div class="review-card">
+                            <div class="stars">★★★★★</div>
+                            <p>
+                                “Nội dung được chia thành các phần rõ ràng,
+                                giúp mình dễ theo dõi và ghi nhớ ý chính.”
+                            </p>
+                            <h3>Minh Anh</h3>
+                            <span>Độc giả minh họa</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="review-card">
+                            <div class="stars">★★★★★</div>
+                            <p>
+                                “Mình thích cách trình bày đơn giản và những
+                                gợi ý có thể áp dụng trong sinh hoạt hằng ngày.”
+                            </p>
+                            <h3>Hoàng Nam</h3>
+                            <span>Độc giả minh họa</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="review-card">
+                            <div class="stars">★★★★★</div>
+                            <p>
+                                “Một ý tưởng thiết kế sách đẹp mắt, nội dung
+                                được tổ chức thành từng phần dễ đọc.”
+                            </p>
+                            <h3>Thu Hà</h3>
+                            <span>Độc giả minh họa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <a class="footer-brand" href="#home">
+                <i class="bi bi-book-half"></i> BookSpace
+            </a>
+            <p>Lan tỏa tri thức, nuôi dưỡng cảm hứng đọc sách.</p>
+            <div class="social-links">
+                <a href="#home" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#home" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#home" aria-label="Email"><i class="bi bi-envelope"></i></a>
+            </div>
+            <p class="copyright">
+                &copy; 2026 BookSpace. Dự án thực hành HTML, CSS và Bootstrap.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+```
