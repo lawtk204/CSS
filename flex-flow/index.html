@@ -1,0 +1,64 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex-flow Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>CSS Flex-flow Property</h1>
+        <p>Thực hành thuộc tính viết tắt của Flexbox</p>
+    </header>
+
+    <main class="content">
+        <section class="example">
+            <h2>Ví dụ 1: row nowrap</h2>
+            <p>
+                Các item được sắp xếp theo hàng từ trái sang phải
+                và không xuống dòng.
+            </p>
+
+            <div class="container container-1">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+
+            <code>flex-flow: row nowrap;</code>
+        </section>
+
+        <section class="example">
+            <h2>Ví dụ 2: row-reverse nowrap</h2>
+            <p>
+                Các item được sắp xếp theo hàng theo hướng ngược lại,
+                từ phải sang trái.
+            </p>
+
+            <div class="container container-2">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+
+            <code>flex-flow: row-reverse nowrap;</code>
+        </section>
+
+        <section class="note">
+            <h2>Ghi nhớ</h2>
+            <ul>
+                <li><strong>flex-direction</strong> xác định hướng sắp xếp.</li>
+                <li><strong>flex-wrap</strong> xác định item có được xuống dòng hay không.</li>
+                <li><strong>flex-flow</strong> kết hợp cả hai thuộc tính trên.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        Bài tập CSS Flexbox | flex-flow
+    </footer>
+</body>
+</html>
+```

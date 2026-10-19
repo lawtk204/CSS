@@ -1,0 +1,141 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #1d4ed8;
+    color: white;
+    text-align: center;
+    padding: 30px 16px;
+}
+
+.header h1 {
+    margin-bottom: 8px;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.example {
+    margin-bottom: 30px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.example h2 {
+    margin-bottom: 8px;
+    color: #1d4ed8;
+}
+
+.example p {
+    margin-bottom: 18px;
+    color: #475569;
+}
+
+/* Dùng chung cho hai Flex Container */
+.container {
+    display: flex;
+    gap: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #e2e8f0;
+    border: 2px dashed #94a3b8;
+    border-radius: 8px;
+
+    /* Giữ các item trên một hàng */
+    overflow-x: auto;
+}
+
+.item {
+    flex: 0 0 100px;
+    height: 70px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Ví dụ 1 */
+.container-1 {
+    flex-flow: row nowrap;
+}
+
+/* Ví dụ 2 */
+.container-2 {
+    flex-flow: row-reverse nowrap;
+}
+
+.container-2 .item {
+    background-color: #16a34a;
+}
+
+.example code {
+    display: inline-block;
+    padding: 8px 12px;
+    color: #7c3aed;
+    background-color: #f3e8ff;
+    border-radius: 5px;
+}
+
+.note {
+    padding: 24px;
+    background-color: #dbeafe;
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
+}
+
+.note h2 {
+    margin-bottom: 10px;
+}
+
+.note ul {
+    padding-left: 22px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1e293b;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .content {
+        padding: 0 12px;
+        margin: 20px auto;
+    }
+
+    .example {
+        padding: 16px;
+    }
+
+    .item {
+        flex-basis: 80px;
+    }
+}
