@@ -1,0 +1,163 @@
+
+/* Thiết lập chung */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #212529;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    letter-spacing: 0.5px;
+}
+
+.navbar .nav-link {
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #93c5fd;
+}
+
+/* Hero Section */
+.hero {
+    padding: 110px 20px;
+    background: linear-gradient(135deg, #2563eb, #6d28d9);
+}
+
+.hero-label,
+.section-label {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-label {
+    color: #dbeafe;
+}
+
+.hero h1 {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Nhãn tiêu đề các section */
+.section-label {
+    color: #2563eb;
+}
+
+/* About Section */
+.about-box {
+    padding: 40px;
+    border-radius: 16px;
+    background: #eff6ff;
+    border-left: 5px solid #2563eb;
+}
+
+.about-box h3 {
+    color: #1d4ed8;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #f8fafc;
+}
+
+.service-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px #00000012;
+}
+
+.service-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    color: white;
+    background-color: #2563eb;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.service-card .card-text {
+    min-height: 100px;
+}
+
+.service-card .btn {
+    margin-top: 10px;
+}
+
+/* Call to Action */
+.cta-section {
+    background: linear-gradient(135deg, #1e40af, #4338ca);
+}
+
+/* Footer */
+.footer {
+    margin-top: 0;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 767.98px) {
+    .hero {
+        padding: 75px 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero .btn {
+        margin: 6px;
+    }
+
+    .about-box {
+        padding: 25px;
+    }
+
+    .service-card .card-text {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero .btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
